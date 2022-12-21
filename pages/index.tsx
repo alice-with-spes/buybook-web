@@ -1,4 +1,8 @@
 import Head from "next/head";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import CarouselLarge from "../components/Carousel/CarouselLarge";
+import QuickMenu from "../components/QuickMenu";
 
 export default function Home() {
   return (
@@ -9,11 +13,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <div>
-          <h1 className="text-3xl font-bold underline">Hello World!</h1>
-        </div>
+      <Navbar />
+      <main className="h-full mx-8">
+        <CarouselLarge />
+        <QuickMenu />
       </main>
+      <Footer />
     </>
   );
 }
